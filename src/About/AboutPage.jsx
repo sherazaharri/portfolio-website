@@ -1,7 +1,7 @@
 import '../page.css'
 import Navbar from '../Navbar';
 import WaveHeader from '../WaveHeader';
-import BubblesPage from '../bubblesPage';
+import BubblesPage from '../BubblesPage';
 import Footer from '../Footer';
 
 import pfgcimage from '../assets/pfgc.jpg'

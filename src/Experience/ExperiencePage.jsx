@@ -1,7 +1,7 @@
 import '../page.css'
 import WaveHeader from '../WaveHeader';
 import Navbar from '../Navbar';
-import BubblesPage from '../bubblesPage';
+import BubblesPage from '../BubblesPage';
 import Footer from '../Footer';
 
 import JuloIcon from '../assets/juloicon.jpg';
