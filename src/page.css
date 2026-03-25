@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import "tailwindcss";
+
+theme{
+    --font-varela:'Varela Round', 'sans-serif'
+}
+
+.projectButton{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.projectButton:hover{
+    transform: scale(1.1);
+}
+
+.projectButton2{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.Ripple2{
+    top: 0dvh;
+    left: 0dvh;
+    opacity: 1;
+}
+
+.projectButton2:hover{
+    transform: scale(1.1);
+}
+
+.projectButton2:hover .Ripple2{
+    animation: rippleEffect2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.projectButton2:hover .Ripple2:nth-child(2){ 
+  animation-delay: 1s; 
+}
+
+
+@keyframes rippleEffect2 {
+  to{transform: scaleX(1.1) scaleY(1.5); opacity: 0;}
+}
+
+
+
+
+
+.bubblebg2 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(0, 124, 196); 
+  border-radius: 100%; 
+  position: absolute;
+  bottom: -30px;
+  opacity: 0.2;
+  background: transparent;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% { transform: translateY(0%); opacity: 0.06; }
+  100% { transform: translateY(-120vh); }
+}
+
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 200px; }
+}
+
+.bubblebg2--1 { left: 10%; animation-delay: 0.5s; animation-duration: 16s; opacity: 0.2; }
+.bubblebg2--2 { width: 15px; height: 15px; left: 40%; animation-delay: 1s; animation-duration: 10s; opacity: 0.1; }
+.bubblebg2--3 { width: 10px; height: 10px; left: 30%; animation-delay: 5s; animation-duration: 20s; opacity: 0.3; }
+.bubblebg2--4 { width: 25px; height: 25px; left: 40%; animation-delay: 8s; animation-duration: 17s; opacity: 0.2; }
+.bubblebg2--5 { width: 30px; height: 30px; left: 60%; animation-delay: 10s; animation-duration: 15s; opacity: 0.1; }
+.bubblebg2--6 { width: 10px; height: 10px; left: 80%; animation-delay: 3s; animation-duration: 30s; opacity: 0.4; }
+.bubblebg2--7 { width: 15px; height: 15px; left: 90%; animation-delay: -7s; animation-duration: 25s; opacity: 0.3; }
+.bubblebg2--9 { width: 20px; height: 20px; left: 50%; bottom: 30px; animation-delay: -5s; animation-duration: 19s; opacity: 0.2; }
+.bubblebg2--10 { width: 40px; height: 40px; left: 30%; bottom: 30px; animation-delay: -21s; animation-duration: 16s; opacity: 0.3; }
+.bubblebg2--11 { width: 30px; height: 30px; left: 60%; bottom: 30px; animation-delay: -13.75s; animation-duration: 20s; opacity: 0.3; }
+.bubblebg2--12 { width: 25px; height: 25px; left: 90%; bottom: 30px; animation-delay: -10.5s; animation-duration: 19s; opacity: 0.3; }
+
+@media(max-width:800px){
+  .desknav{
+    display: none;
+  }
+
+  .mobilenav{
+    display: flex;
+  }
+}
+
+@media(max-width:700px){
+  .skillscard{
+    width: 15vw;
+    height: 17vw;
+    gap: 23%;
+  }
+
+  .orgcard{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orgcardrev{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orgcardtext{
+    width: 90%;
+    text-align: center;
+  }
+
+  .orgcardimage{
+    width: 60%;
+  }
+
+  .projectcard{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100vw;
+  }
+
+  .projectcardrev{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100vw;
+  }
+
+  .projectButton{
+    width: 20vw;
+    font-size: 3vw;
+  }
+
+  .projectButtonImg{
+    width: 3vw;
+  }
+
+  .projectcardtext{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2dvh;
+    width: 90%;
+    gap: min(2dvh,14px);
+  }
+
+  .projectcardtext p{
+    font-size: 2.5vw;
+  }
+
+  .projectcardmore{
+    width: 25vw;
+    height: min(8.5dvh,50px);
+    font-size: 3vw;
+    border-radius: 40px;
+  }
+
+  .footerbutton{
+    width: 12vw;
+    height: 13vw;
+    gap: 25%;
+  }
+  
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import "tailwindcss";
+
+:root {
+  --size: 22vw;
+  --speed: 35s;
+}
+
+@font-face {
+  font-family: 'Sans Outline';
+  src: url('./assets/sansoutline.otf');
+}
+
+@font-face {
+  font-family: 'Nabana';
+  src: url('./assets/nabana.ttf');
+}
+
+@theme {
+  --font-varela: 'Varela Round', sans-serif;
+  --font-varelastraight: 'Varela', sans-serif;
+  --font-cherry: 'Cherry Bomb One', sans-serif;
+  --font-sansoutline: 'Sans Outline', sans-serif;
+  --font-nabana: 'Nabana', sans-serif;
+}
+
+.Ripple{
+  width: 40vw;
+  height: 20vh;
+  background-color: none;
+  border: 2px solid #569ab5;
+  border-radius: 20px; 
+  opacity: 1;
+  
+  top: 0dvh;
+  z-index: 4;
+}
+
+@keyframes rippleEffect {
+  to{transform: scaleX(1.2) scaleY(1.5); opacity: 0;}
+}
+
+.PageButtonAbout{
+  width: 40vw;
+  height: 20vh;
+  border: 0.2vw solid #79d9ff;
+  border-radius: 20px;
+
+  font-size: 4vw;
+  text-align: left;
+  padding-left: 2vw;
+
+  background-image: url(./assets/user.png), linear-gradient(to bottom, #79d7fd, #25b8fc, #1a8abf);
+  background-size: 9vw auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 98%, center;
+
+  z-index: 5;
+  transition: transform 0.5s;
+}
+
+.button1:hover .PageButtonAbout {
+  transform: scale(1.05);
+}
+
+.button1:hover .Ripple{
+  animation: rippleEffect;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.button1:hover .Ripple:nth-child(2){ 
+  animation-delay: 1s; 
+}
+
+.button1:hover .Ripple:nth-child(3){ 
+  animation-delay: 2s; 
+}
+
+.button1:hover .Ripple:nth-child(4){ 
+  animation-delay: 3s; 
+}
+
+.PageButtonProject{
+  width: 40vw;
+  height: 20vh;
+  background-color: #79d7fd;
+  border: 0.2vw solid #79d9ff;
+  border-radius: 20px;
+
+  font-size: 4vw;
+  text-align: left;
+  padding-left: 2vw;
+
+  background-image: url(./assets/project.png), linear-gradient(to bottom, #79d7fd, #25b8fc, #1a8abf);
+  background-size: 9vw auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 98%, center;
+
+  z-index: 5;
+  transition: transform 0.5s;
+}
+
+.button2:hover .PageButtonProject{
+  transform: scale(1.05);
+}
+
+.button2:hover .Ripple{
+  animation: rippleEffect;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.button2:hover .Ripple:nth-child(2){ 
+  animation-delay: 1s; 
+}
+
+.button2:hover .Ripple:nth-child(3){ 
+  animation-delay: 2s; 
+}
+
+.button2:hover .Ripple:nth-child(4){ 
+  animation-delay: 3s; 
+}
+
+.PageButtonExperience{
+  width: 40vw;
+  height: 20vh;
+  background-color: #79d7fd;
+  border: 0.2vw solid #79d9ff;
+  border-radius: 20px;
+
+  font-size: 4vw;
+  text-align: left;
+  padding-left: 2vw;
+
+  background-image: url(./assets/suitcase.png), linear-gradient(to bottom, #79d7fd, #25b8fc, #1a8abf);
+  background-size: 9vw auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 96%, center;
+
+  z-index: 5;
+  transition: transform 0.5s;
+}
+
+.button3:hover .PageButtonExperience{
+  transform: scale(1.05);
+}
+
+.button3:hover .Ripple{
+  animation: rippleEffect;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.button3:hover .Ripple:nth-child(2){ 
+  animation-delay: 1s; 
+}
+
+.button3:hover .Ripple:nth-child(3){ 
+  animation-delay: 2s; 
+}
+
+.button3:hover .Ripple:nth-child(4){ 
+  animation-delay: 3s; 
+}
+
+
+.bubble {
+  width: var(--size);
+  height: var(--size);
+  background: #fae0d0;
+  border: calc(var(--size) * 0.09) solid #34b9ee;
+  overflow: visible;
+  border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%;
+  animation: rotate var(--speed) infinite linear, morph 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(1turn); }
+}
+
+@keyframes morph {
+  0% { border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%; }
+  25% { border-radius: 55% 52% 60% 55% / 59% 57% 62% 51%; }
+  50% { border-radius: 56% 51% 59% 56% / 60% 58% 61% 52%; }
+  75% { border-radius: 57% 50% 60% 55% / 60% 57% 63% 53%; }
+  100% { border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%; }
+}
+
+.bubblebg {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -30px;
+  opacity: 0.2;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% { transform: translateY(0%); opacity: 0.06; }
+  100% { transform: translateY(-120vh); }
+}
+
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 200px; }
+}
+
+.bubblebg--1 { left: 10%; animation-delay: 0.5s; animation-duration: 16s; opacity: 0.2; }
+.bubblebg--2 { width: 15px; height: 15px; left: 40%; animation-delay: 1s; animation-duration: 10s; opacity: 0.1; }
+.bubblebg--3 { width: 10px; height: 10px; left: 30%; animation-delay: 5s; animation-duration: 20s; opacity: 0.3; }
+.bubblebg--4 { width: 25px; height: 25px; left: 40%; animation-delay: 8s; animation-duration: 17s; opacity: 0.2; }
+.bubblebg--5 { width: 30px; height: 30px; left: 60%; animation-delay: 10s; animation-duration: 15s; opacity: 0.1; }
+.bubblebg--6 { width: 10px; height: 10px; left: 80%; animation-delay: 3s; animation-duration: 30s; opacity: 0.4; }
+.bubblebg--7 { width: 15px; height: 15px; left: 90%; animation-delay: -7s; animation-duration: 25s; opacity: 0.3; }
+.bubblebg--9 { width: 20px; height: 20px; left: 50%; bottom: 30px; animation-delay: -5s; animation-duration: 19s; opacity: 0.2; }
+.bubblebg--10 { width: 40px; height: 40px; left: 30%; bottom: 30px; animation-delay: -21s; animation-duration: 16s; opacity: 0.3; }
+.bubblebg--11 { width: 30px; height: 30px; left: 60%; bottom: 30px; animation-delay: -13.75s; animation-duration: 20s; opacity: 0.3; }
+.bubblebg--12 { width: 25px; height: 25px; left: 90%; bottom: 30px; animation-delay: -10.5s; animation-duration: 19s; opacity: 0.3; }
+
+@media(max-width:700px){
+  .landinglayout{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .landingbuttonlayout{
+    height: 100%;
+    padding-top: 5dvh;
+
+    justify-content: start;
+    align-items: center;
+  }
+
+  .bubble {
+    width: 30vw;
+    height: 30vw;
+    background: #fae0d0;
+    border: calc(30vw * 0.09) solid #34b9ee;
+    overflow: visible;
+    border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%;
+    animation: rotate var(--speed) infinite linear, morph 6s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  .PageButtonAbout{
+    width: 50vw;
+    height: 15vw;
+  }
+
+  .PageButtonExperience{
+    width: 50vw;
+    height: 15vw;
+  }
+
+  .PageButtonProject{
+    width: 50vw;
+    height: 15vw;
+  }
+
+  .Ripple{
+    display: none;
+  }
+
+}
