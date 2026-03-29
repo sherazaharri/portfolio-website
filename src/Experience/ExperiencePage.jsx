@@ -14,7 +14,7 @@ function ExperiencePage(){
         <BubblesPage></BubblesPage>
         <div className='w-full h-[100dvh] bg-[] overflow-auto font-varela relative z-1'>
             <Navbar></Navbar>
-            <h1 className='h-[min(40dvh,280px)] text-[clamp(80px,10vw,100px)] text-white text-center bg-[#00bbfa] pt-[min(16dvh,112px)] shadow' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>Experience</h1>
+            <h1 className='h-[min(40dvh,280px)] text-[clamp(80px,10vw,100px)] text-white text-center bg-[#00bbfa] pt-[min(16dvh,112px)] shadow max-[701px]:text-[min(15vw,105px)] max-[701px]:h-[min(45vw,315px)] max-[701px]:pb-[20vw]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>Experience</h1>
             <WaveHeader></WaveHeader>
 
             <p className='text-center text-[5vw] mb-[min(2dvh,14px)]'>EDUCATION</p>

@@ -273,3 +273,22 @@
   }
 
 }
+
+@media(max-width:400px){
+  .bubble {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .PageButtonAbout{
+    border-radius: 10px;
+  }
+
+  .PageButtonExperience{
+    border-radius: 10px;
+  }
+
+  .PageButtonProject{
+    border-radius: 10px;
+  }
+}
