@@ -45,7 +45,7 @@ function Navbar(){
                         </div>
                     </div>
                 </div>
-                <nav className={`w-screen h-[70vw] fixed top-[7dvh] ${menuOpen ? 'flex' : 'hidden'} flex flex-col justify-center items-center gap-[2vh] font-varela bg-[linear-gradient(to_bottom,#79d7fd,#25b8fc)] text-black border-b-[0.5dvh] border-[#76d9fa] z-10`}>
+                <nav className={`w-screen h-[70vw] fixed top-[9.4dvh] ${menuOpen ? 'flex' : 'hidden'} flex flex-col justify-center items-center gap-[2vh] font-varela bg-[linear-gradient(to_bottom,#79d7fd,#25b8fc)] text-black border-b-[0.5dvh] border-[#76d9fa] z-10`}>
                     <Link to='/'>
                         <p className='text-[7vw] text-[#ffffff]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>HOME</p>
                     </Link>
