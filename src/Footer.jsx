@@ -2,11 +2,11 @@ import './page.css'
     
 function Footer(){
     return(
-        <div className='w-full h-[min(40dvh,225px)] bg-[#1a8abf] pb-[2dvh] border-t-[0.5dvh] border-[#7cd3ef]'>
+        <div className='w-full h-[min(40dvh,225px)] bg-[#1a8abf] pb-[2dvh] pt-[2dvh] border-t-[0.5dvh] border-[#7cd3ef]'>
             <div className='w-full h-full flex flex-col items-center justify-center gap-5 '>
-                <h1 className='text-[2.5vw] text-white max-[701px]:text-[4vw]' style={{textShadow: '0 0 4px #177dac 0 0 4px #177dac, 0 0 4px #177dac'}}>Get in Touch!</h1>
+                <h1 className='text-[2.5vw] text-white max-[701px]:text-[4vw] max-[451px]:text-[5vw]' style={{textShadow: '0 0 4px #177dac 0 0 4px #177dac, 0 0 4px #177dac'}}>Get in Touch!</h1>
 
-                <div className='flex flex-row items-center gap-5'>
+                <div className='flex flex-row items-center gap-5 max-[451px]:gap-[3vw]'>
                     <a href='mailto:sherazarharri@gmail.com'>
                         <button className='footerbutton w-[8vw] h-[9vw] bg-[linear-gradient(to_bottom,#79d7fd,#25b8fc)] flex flex-col justify-center items-center gap-[20%] rounded-2xl projectButton'>
                             <div className='w-[50%] h-[30%]' style={{filter: 'drop-shadow(0 0 0.5px black) drop-shadow(0 0 0.5px black)'}}>

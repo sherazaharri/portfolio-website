@@ -171,7 +171,7 @@
 .bubble {
   width: var(--size);
   height: var(--size);
-  background: #fae0d0;
+  background: none;
   border: calc(var(--size) * 0.09) solid #34b9ee;
   overflow: visible;
   border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%;
@@ -245,12 +245,26 @@
   .bubble {
     width: 30vw;
     height: 30vw;
-    background: #fae0d0;
+    background: none;
     border: calc(30vw * 0.09) solid #34b9ee;
     overflow: visible;
     border-radius: 58% 50% 62% 57% / 61% 59% 64% 53%;
     animation: rotate var(--speed) infinite linear, morph 6s ease-in-out infinite;
     z-index: 1;
+  }
+
+  .iconPhoto{
+    top: 0;
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .nameText{
+    margin-top: 2dvh;
+  }
+
+  .locationDiv{
+    margin-top: 1dvh;
   }
 
   .PageButtonAbout{
@@ -278,6 +292,12 @@
   .bubble {
     width: 40vw;
     height: 40vw;
+  }
+
+  .iconPhoto{
+    top: 0;
+    width: 38vw;
+    height: 38vw;
   }
 
   .PageButtonAbout{

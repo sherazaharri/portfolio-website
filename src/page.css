@@ -46,9 +46,6 @@ theme{
 }
 
 
-
-
-
 .bubblebg2 {
   width: 100px;
   height: 100px;
@@ -173,5 +170,13 @@ theme{
     height: 13vw;
     gap: 25%;
   }
-  
+}
+
+
+@media(max-width:450px){
+  .footerbutton{
+    width: 16vw;
+    height: 17vw;
+    gap: 25%;
+  }
 }

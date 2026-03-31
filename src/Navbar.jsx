@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useRef, useState, useEffect, use } from 'react';
 import './page.css';
+import {ViewTransition} from 'react';
 
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -45,17 +46,17 @@ function Navbar(){
                         </div>
                     </div>
                 </div>
-                <nav className={`w-screen h-[70vw] fixed top-[9.4dvh] ${menuOpen ? 'flex' : 'hidden'} flex flex-col justify-center items-center gap-[2vh] font-varela bg-[linear-gradient(to_bottom,#79d7fd,#25b8fc)] text-black border-b-[0.5dvh] border-[#76d9fa] z-10`}>
-                    <Link to='/'>
+                <nav className={`w-screen h-[70vw] fixed top-[min(9.4dvh,76.234px)] ${menuOpen ? 'flex' : 'hidden'} flex flex-col justify-center items-center gap-[2vh] font-varela bg-[linear-gradient(to_bottom,#79d7fd,#25b8fc)] text-black border-b-[0.5dvh] border-[#76d9fa] z-10`}>
+                    <Link to='/' onClick={() => setMenuOpen(!menuOpen)}>
                         <p className='text-[7vw] text-[#ffffff]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>HOME</p>
                     </Link>
-                    <Link to='/about'>
+                    <Link to='/about' onClick={() => setMenuOpen(!menuOpen)}>
                         <p className='text-[7vw] text-[#ffffff]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>ABOUT</p>
                     </Link>
-                    <Link to='/project'>
+                    <Link to='/project' onClick={() => setMenuOpen(!menuOpen)}>
                         <p className='text-[7vw] text-[#ffffff]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>PROJECTS</p>
                     </Link>
-                    <Link to='/experience'>
+                    <Link to='/experience' onClick={() => setMenuOpen(!menuOpen)}>
                         <p className='text-[7vw] text-[#ffffff]' style={{textShadow: '0 0 4px #00749ab7, 0 0 4px #00749ab7, 0 0 4px #00749ab7'}}>EXPERIENCE</p>
                     </Link>
                 </nav>
